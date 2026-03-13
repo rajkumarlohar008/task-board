@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div>ToDo board</div>
+            <div>
+                <button id="toggle-modal">Add new task</button>
+            </div>
+        </nav>
+        <section class="board">
+            <div id="to-do" class="task-column">
+                <div class="heading">
+                    <div class="left">ToDo</div>
+                    <div id="count" class="right">count</div>
+                </div>
+                <!-- <div draggable="true" class="task">
+                    <h2>Task 1</h2>
+                    <p>Discreption for task 1</p>
+                    <button id="deletebtn">Delete</button>
+                </div> -->
+            </div>
+            <div id="in-progress" class="task-column">
+                <div class="heading">
+                    <div class="left">In progress</div>
+                    <div id="count" class="right">count</div>
+                </div>
+            </div>
+            <div id="done" class="task-column">
+                <div class="heading">
+                    <div class="left">Done</div>
+                    <div id="count" class="right">count</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal add-new-task">
+        <div class="bg"></div>
+        <form class="center add-task">
+            <input id="title" type="text" placeholder="Task Title">
+            <textarea id="Discreption" placeholder="Task Description"></textarea>
+            <button type="submit" value="Add Task" id="add-new-task" class="add-task-btn">Add Task</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
